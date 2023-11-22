@@ -2,12 +2,12 @@
 Main module of the server file
 """
 
+import os
 # 3rd party moudles
 from flask import render_template
 
 # local modules
 import config
-import os
 
 
 # Get the application instance
@@ -28,4 +28,4 @@ def home():
 
 
 if __name__ == "__main__":
-    connex_app.run(port=os.getenv("PORT", default=5000))
+    connex_app.run(port=os.getenv("PORT", default="8000"))
