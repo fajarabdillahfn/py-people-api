@@ -7,6 +7,7 @@ from flask import render_template
 
 # local modules
 import config
+import os
 
 
 # Get the application instance
