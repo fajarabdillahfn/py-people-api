@@ -27,4 +27,4 @@ def home():
 
 
 if __name__ == "__main__":
-    connex_app.run(host='0.0.0.0')
+    connex_app.run(port=os.getenv("PORT", default=5000))
